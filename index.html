@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación ksrolaw</title>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            perspective: 1200px;
+        }
+        .contenedor {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .texto-ksrolaw {
+            position: absolute;
+            font-family: "Arial Black", sans-serif;
+            font-size: 120px;
+            color: #0ff;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+            animation: orbitaEspectacular 8s infinite ease-in-out;
+            white-space: nowrap;
+        }
+        @keyframes orbitaEspectacular {
+            0% {
+                top: 10%;
+                left: 10%;
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.5);
+                filter: hue-rotate(0deg);
+            }
+            25% {
+                top: 15%;
+                left: 55%;
+                transform: rotateX(180deg) rotateY(90deg) rotateZ(45deg) scale(1.3);
+                filter: hue-rotate(90deg);
+            }
+            50% {
+                top: 65%;
+                left: 50%;
+                transform: rotateX(360deg) rotateY(180deg) rotateZ(90deg) scale(0.7);
+                filter: hue-rotate(180deg);
+            }
+            75% {
+                top: 55%;
+                left: 5%;
+                transform: rotateX(540deg) rotateY(270deg) rotateZ(135deg) scale(1.6);
+                filter: hue-rotate(270deg);
+            }
+            100% {
+                top: 10%;
+                left: 10%;
+                transform: rotateX(720deg) rotateY(360deg) rotateZ(360deg) scale(0.5);
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="texto-ksrolaw">ksrolaw</div>
+    </div>
+</body>
+</html>
